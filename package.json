@@ -1,0 +1,16 @@
+{
+  "name": "scss-lunch-and-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html -p 2400 --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Coppola",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.11.0"
+  }
+}

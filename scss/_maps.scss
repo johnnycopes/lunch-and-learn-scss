@@ -1,0 +1,27 @@
+/* 
+
+Maps are a helpful way to keep related style values all in one place.
+
+Below is a simplified version of a map we use the real project to keep track of all of our z-index 
+values. Assuming that the map is used every time a z-index value is declared in the application, 
+it serves as a single source of truth for all z-index values in the app.
+
+*/
+
+$z-index: (
+	modal: 900,
+	header: 800,
+	panel: 700
+);
+
+/*
+
+To access a value in the map, you use the value "map-get" and then parentheses. The first value
+is the name of the map and the second value is the property name in that map you want to access
+the value of.
+
+*/
+
+.my-header {
+	z-index: map-get($z-index, header);
+}
