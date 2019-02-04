@@ -1,0 +1,31 @@
+/* 
+
+=============
+MAPS
+=============
+
+Maps are a helpful way to keep related style values all in one place.
+
+*/
+
+$my-colors: (
+	blue: cadetblue,
+	pink: salmon,
+	yellow: gold
+);
+
+/*
+
+To access a value in the map, you use the value "map-get" and then parentheses. The first value
+is the name of the map and the second value is the property name in that map you want to access
+the value of.
+
+*/
+
+.my-variables-content {
+	// padding: 20px;
+
+	&__header {
+		// background: map-get($my-colors, yellow);
+	}
+}

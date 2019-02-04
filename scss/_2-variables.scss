@@ -1,0 +1,44 @@
+/* 
+
+=============
+VARIABLES
+=============
+
+SCSS variables are prefixed with a dollar sign ($).
+
+*/
+
+$blue: cadetblue;
+$pink: salmon;
+$yellow: gold;
+
+.my-variables-content {
+	// background: $blue;
+}
+
+/*
+
+🔥🔥🔥 Incoming bonus info! 👈👈👈
+
+CSS custom properties (aka CSS variables) are defined within a selector and then
+referenced with the property keyword `var()`. Unlike SCSS variables, they can be
+changed dynamically
+
+*/
+
+:root {
+	--blue: cadetblue;
+	--pink: salmon;
+	--yellow: gold;
+}
+
+.my-variables-content {
+	// background: var(--pink);
+}
+
+
+@media (max-width: 500px) {
+	:root {
+		--pink: lightpink;
+	}
+}

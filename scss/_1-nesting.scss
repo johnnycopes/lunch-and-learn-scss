@@ -1,0 +1,60 @@
+/*
+
+SCSS is a CSS preprocessor. It's a language that's written and then transpiled into CSS before
+runtime. You can think of it as CSS with superpowers. Let's go through some of it's most useful abilities.
+
+=============
+NESTING
+=============
+
+In SCSS, you can nest selectors.
+
+*/
+
+// this plain CSS
+
+.my-nesting-content {
+	background: indigo;
+}
+
+.my-nesting-content h1 {
+	color: whitesmoke;
+}
+
+// can be written like this in SCSS
+
+.my-nesting-content {
+	background: indigo;
+
+	h1 {
+		color: whitesmoke;
+	}
+}
+
+/*
+
+Where we capitalize on this the most in our codebase is in conjunction with our use of BEM, the CSS
+methodology that we follow. The ampersand (&) in SCSS can be used to reference the parent selector
+of a ruleset.
+
+*/
+
+// again, this plain CSS
+
+// .my-nesting-content {
+// 	background: indigo;
+// }
+
+// .my-nesting-content__header {
+// 	color: goldenrod;
+// }
+
+// // can be written like this in SCSS
+
+// .my-nesting-content {
+// 	background: indigo;
+
+// 	&__header {
+// 		color: goldenrod;
+// 	}
+// }

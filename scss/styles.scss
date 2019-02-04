@@ -1,19 +1,23 @@
 /*
 
+=============
+PARTIALS
+=============
+
 Partials are a helpful way to modularize your styles across multiple files.
 
-A partial is simply a SCSS file named with a leading underscore. You might 
-name it something like _partial.scss. The underscore lets Sass know that the 
-file is only a partial file and that it should not be generated into a CSS 
-file. SCSS partials are used with the @import directive. It's not necessary
-to include the file extension.
+A partial is simply a SCSS file named with a leading underscore. The underscore 
+lets SCSS know that the  file is only a partial file and that it should not be 
+generated into its own CSS file. SCSS partials are used with the @import directive. 
+It's not necessary to include the file extension when importing.
 
 */
 
-@import 'variables';
-@import 'maps';
-@import 'mixins';
-@import 'interpolation';
+@import '1-nesting';
+@import '2-variables';
+@import '3-maps';
+@import '4-mixins';
+@import '5-example';
 
 *,
 *::before,
@@ -25,22 +29,6 @@ body {
 	font-family: 'Sarabun', sans-serif;
 }
 
-header {
-	background: gold;
-	padding: 20px;
-
-}
-
-main {
-	background: salmon;
-	padding: 20px;
-}
-
 h1 {
 	font-size: 40px;
-}
-
-p {
-	margin: 30px 0;
-	font-size: 20px;
 }

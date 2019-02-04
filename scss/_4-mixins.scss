@@ -1,0 +1,70 @@
+/*
+
+=============
+MIXINS
+=============
+
+Mixins allow you to make groups of CSS declarations that you want to reuse.
+
+*/
+
+// BEFORE
+
+// .my-component {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 20px;
+// 	background: violet;
+// }
+
+// .my-other-component {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 20px;
+// 	background: cadetblue;
+// }
+
+
+// AFTER
+
+// @mixin flex-center-all {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 20px;
+// }
+
+// .my-component {
+// 	@include flex-center-all;
+// 	background: violet;
+// }
+
+// .my-other-component {
+// 	@include flex-center-all;
+// 	background: cadetblue;
+// }
+
+
+/*
+
+Mixins can also accept arguments!
+
+*/
+
+// @mixin typical-component($color) {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 20px;
+// 	background: $color;
+// }
+
+// .my-component {
+// 	@include typical-component(violet);
+// }
+
+// .my-other-component {
+// 	@include typical-component(cadetblue);
+// }

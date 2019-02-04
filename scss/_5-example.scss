@@ -1,0 +1,59 @@
+/*
+
+Refactor this code!
+
+Objectives:
+- utilize nesting
+- use at least one SCSS variable
+- use at least one map
+- use at least one mixin
+
+BONUS!
+- use at least one CSS variable
+
+*/
+
+
+.my-example__header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: indianred;
+	height: 150px;
+	padding: 20px;
+}
+
+.my-example__header-content {
+	color: lightsteelblue;
+}
+
+.my-example__panel {
+	background: lightsteelblue;
+	overflow: auto;
+	padding: 20px;
+	padding-top: calc(150px + 20px);
+}
+
+.my-example__panel-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	padding: 20px;
+	color: indianred;
+}
+
+.my-example__panel-content:nth-child(even) {
+	color: gold;
+}
+
+@media screen and (min-width: 700px) {
+	
+	.my-example__header-content,
+	.my-example__panel-content {
+		margin: 20px;
+	}
+
+}
