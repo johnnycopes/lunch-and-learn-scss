@@ -13,23 +13,23 @@ In SCSS, you can nest selectors.
 
 // this plain CSS
 
-.my-nesting-content {
-	background: indigo;
-}
+// .my-nesting-content {
+// 	background: indigo;
+// }
 
-.my-nesting-content h1 {
-	color: whitesmoke;
-}
+// .my-nesting-content h1 {
+// 	color: whitesmoke;
+// }
 
 // can be written like this in SCSS
 
-.my-nesting-content {
-	background: indigo;
+// .my-nesting-content {
+// 	background: indigo;
 
-	h1 {
-		color: whitesmoke;
-	}
-}
+// 	h1 {
+// 		color: whitesmoke;
+// 	}
+// }
 
 /*
 

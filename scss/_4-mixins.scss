@@ -29,7 +29,7 @@ Mixins allow you to make groups of CSS declarations that you want to reuse.
 
 // AFTER
 
-// @mixin flex-center-all {
+// @mixin nice-layout {
 // 	display: flex;
 // 	justify-content: center;
 // 	align-items: center;
@@ -37,12 +37,12 @@ Mixins allow you to make groups of CSS declarations that you want to reuse.
 // }
 
 // .my-component {
-// 	@include flex-center-all;
+// 	@include nice-layout;
 // 	background: violet;
 // }
 
 // .my-other-component {
-// 	@include flex-center-all;
+// 	@include nice-layout;
 // 	background: cadetblue;
 // }
 
