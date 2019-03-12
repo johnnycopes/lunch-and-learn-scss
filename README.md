@@ -15,6 +15,5 @@ The purpose of this lesson is get you better-acquainted with some of the princip
 
 #### How?
 
-1. Clone this repository onto your machine
+1. Clone this repository onto your machine and install all local dependencies with `npm install`
 2. Type `npm run start` in your console and smash the "Enter" button to fire up the dev server and launch the page
-3. All of the markup lives in HTML and its corresponding styles each live in their own numbered stylesheet
